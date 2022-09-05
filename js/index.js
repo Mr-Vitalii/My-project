@@ -1,4 +1,14 @@
-const max = 10;
-for (let i = 0; i < max; i += 1) {
-  console.log(`${max} % ${i} = `, max % i);
+let cost;
+const subscription = "premium";
+
+if (subscription === "free") {
+  cost = 0;
+} else if (subscription === "pro") {
+  cost = 100;
+} else if (subscription === "premium") {
+  cost = 500;
+} else {
+  console.log("Invalid subscription type");
 }
+
+console.log(cost); // 500
